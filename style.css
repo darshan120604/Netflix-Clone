@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden; /* Removes horizontal scrollbar */
+    overflow-y: auto; /* Keeps vertical scrolling only if content overflows */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height:62px;
+
+}
+
+nav img{
+    color:rgb(255, 30, 0);
+    width:114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    font-family:sans-serif;
+    height:calc(100% - 62px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    color:white;
+    position:relative;
+    gap: 23px;
+    padding: 0 29px;
+}
+
+
+.hero> :first-child{
+    font-weight:bold;
+    font-size: 48px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight:400;
+    font-size:24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight:400;
+    font-size:20px;
+    text-align: center;
+}
+
+.seperation{
+    height: 7px;
+    background-color: rgb(38, 37, 37);
+}
+
+.btn{
+    padding:3px 8px;
+    font-weight: 400;
+    color:white;
+    background-color: rgba(248,243,243,0.0121);
+    border:1px solid white;
+    cursor:pointer;
+}
+
+.btn-red{
+    background-color: rgb(239, 8, 8);
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-red-sm{
+    background-color: rgb(229, 18, 18);
+    color: white;
+}
+
+hero-buttons{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.main input{
+    padding: 7px 101px 4px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 245, 245, 0.7);
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-item {
+    flex: 0 0 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+}
+
+.carousel-item .rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+
+
+h2 {
+    color: white;
+    margin-left: 3%;
+}
+
+.reasons-container {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping for responsiveness */
+    justify-content: center; /* Centers items */
+    gap: 20px; /* Adjust the gap between cards */
+    padding: 20px;
+}
+
+.reason-card {
+    background: linear-gradient(135deg, #21015e, #022a62, #901199); /* Gradient background */
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px); /* Four cards per row with gap accounted */
+    max-width: calc(25% - 40px);
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.reason-card:hover {
+    transform: translateY(-5px); /* Pop-up effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.reason-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Adjust spacing with font size */
+}
+
+.reason-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 50px; /* Adjust for readability */
+}
+
+.reason-card img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px; /* Adjust the size of the icons */
+    height: auto;
+    filter: drop-shadow(0 0 5px #ff6); /* Add glow to the icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reason-card {
+        flex: 1 1 100%; /* Full width for smaller screens */
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .reason-card img {
+        position: static; /* Center image below text */
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq {
+    background-color: #070320;
+    color: white;
+    margin-top: 10px;
+    padding: 32px;
+}
+
+.faqbox {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    background-color: #010101;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 20px auto;
+    border-radius: 8px;
+    position: relative;
+}
+
+.question {
+    flex: 1;
+    font-size: 1rem;
+    color: white;
+    margin-right: 10px; /* Space between question and icon */
+}
+
+.toggle-icon {
+    margin-left: auto; /* Push the icon to the right */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon img {
+    height: 20px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.answer {
+    display: none; /* Hidden initially */
+    margin-top: 10px; /* Add spacing between question and answer */
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: lightgray;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 80vw;
+    margin: 20px auto;
+    color: white;
+}
+
+.footer-item {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-item li {
+    margin-bottom: 10px;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .footer-item a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .footer-item a {
+        font-size: 0.7rem;
+    }
+}
